@@ -9,18 +9,12 @@
         }
 
         div>div {
-            width: 100px;
-            height: 100px;
+            width: 500px;
+            height: 500px;
         }
 
         .demo {
             background-color: #FF9933;
-        }
-
-        #reddiv {
-            background-color: #FF0000;
-
-            /* 試試看，在這裡撰寫 top:500，元素位置是否有移動 */
         }
 
         #greendiv {
@@ -29,6 +23,23 @@
 
         #bluediv {
             background-color: #0000FF;
+        }
+
+        /* div>div>img{
+            object-fit: cover;
+        }  */
+        #reddiv{
+            width: 200px;
+            height: 200px;
+
+            position: fixed;
+            right: 0;
+            bottom: 0;
+
+            background-image : url("img/onepiece20th_logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
     </style>
@@ -42,11 +53,18 @@
     </h3>
 
     <div class="demo">
-        <div id="reddiv">Red</div>
+        <div id="reddiv">
+            <!-- <img src="img/onepiece20th_logo.png" alt=""> -->
+            <table>
+                <tr>
+                    <td>red</td>
+                </tr>
+            </table>
+        </div>
         <div id="greendiv">Green</div>
         <div id="bluediv">Blue</div>
     </div>
 
 </body>
 
-</html>s
+</html>
